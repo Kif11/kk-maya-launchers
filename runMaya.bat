@@ -1,1 +1,1 @@
-python ./maya-launchers/tools/run_maya.py 
+python ./tools/maya-launchers/run_maya.py 
