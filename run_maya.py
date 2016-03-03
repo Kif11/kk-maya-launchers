@@ -1,11 +1,14 @@
 import os
+import sys
 import subprocess
 
 # Return curent working directory
 cwd = os.getcwd()
 
+version = sys.argv[1]
+
 # Path to maya executable
-maya_exec = 'C:/Program Files/Autodesk/Maya2016/bin/maya.exe'
+maya_exec = 'C:/Program Files/Autodesk/Maya%s/bin/maya.exe' % version
 
 # Semicolon separated string of all script paths
 scripts_dir = os.path.dirname(os.path.realpath(__file__)).replace("\\","/")
