@@ -1,6 +1,7 @@
 #!/bin/bash
 
 CUR_EXEC_DIR="$1"
+MAYA_VERSION="$2"
 
 # Configure Maya environment
 export MAYA_PROJECT=$CUR_EXEC_DIR
@@ -10,4 +11,4 @@ export MAYA_SCRIPT_PATH=$CUR_EXEC_DIR/tools
 echo "Maya project set to: " $MAYA_PROJECT
 
 # Run Maya app
-open -n /Applications/Autodesk/maya2015/Maya.app
+open -n /Applications/Autodesk/maya$MAYA_VERSION/Maya.app

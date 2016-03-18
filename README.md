@@ -10,5 +10,7 @@ mkdir tools && cd tools && git clone https://github.com/Kif11/kk-maya-launchers 
 Mac usage:
 ```bash
 git clone https://github.com/Kif11/kk-maya-launchers tools/kk-maya-launchers
-echo 'DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"; $DIR/tools/kk-maya-launchers/RunMaya "$DIR"' > ./RunMaya.command; chmod 777 ./RunMaya.command
+echo MAYA_VERSION="2015" > ./RunMaya.command
+echo 'DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"; $DIR/tools/kk-maya-launchers/RunMaya "$DIR" "$MAYA_VERSION"' >> ./RunMaya.command
+chmod 777 ./RunMaya.command
 ```
