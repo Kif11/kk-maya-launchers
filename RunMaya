@@ -1,0 +1,13 @@
+#!/bin/bash
+
+CUR_WORK_DIR="$(pwd)"
+
+# Configure Maya environment
+export MAYA_PROJECT=$CUR_WORK_DIR
+export PYTHONPATH=$CUR_WORK_DIR/tools
+export MAYA_SCRIPT_PATH=$CUR_WORK_DIR/tools
+
+echo "Maya project set to: " $MAYA_PROJECT
+
+# Run Maya app
+open -n /Applications/Autodesk/maya2015/Maya.app

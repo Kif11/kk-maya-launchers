@@ -12,6 +12,6 @@ Mac usage:
 mkdir tools
 cd tools
 git clone https://github.com/Kif11/kk-maya-launchers
-cp kk-maya-launchers/RunMaya.bat ../RunMaya.bat
-cp kk-maya-launchers/RunMaya.sh ../RunMaya.sh
+ln -s tools/kk-maya-launchers/RunMaya.bat ./RunMaya.bat
+ln -s tools/kk-maya-launchers/RunMaya ./RunMaya
 ```
