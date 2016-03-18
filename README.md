@@ -9,9 +9,6 @@ mkdir tools && cd tools && git clone https://github.com/Kif11/kk-maya-launchers 
 
 Mac usage:
 ```bash
-mkdir tools
-cd tools
-git clone https://github.com/Kif11/kk-maya-launchers
-ln -s tools/kk-maya-launchers/RunMaya.bat ./RunMaya.bat
-ln -s tools/kk-maya-launchers/RunMaya ./RunMaya
+git clone https://github.com/Kif11/kk-maya-launchers tools/kk-maya-launchers
+echo 'DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"; $DIR/tools/kk-maya-launchers/RunMaya "$DIR"' > ./RunMaya.command; chmod 777 ./RunMaya.command
 ```

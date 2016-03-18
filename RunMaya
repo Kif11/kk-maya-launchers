@@ -1,11 +1,11 @@
 #!/bin/bash
 
-CUR_WORK_DIR="$(pwd)"
+CUR_EXEC_DIR="$1"
 
 # Configure Maya environment
-export MAYA_PROJECT=$CUR_WORK_DIR
-export PYTHONPATH=$CUR_WORK_DIR/tools
-export MAYA_SCRIPT_PATH=$CUR_WORK_DIR/tools
+export MAYA_PROJECT=$CUR_EXEC_DIR
+export PYTHONPATH=$CUR_EXEC_DIR/tools
+export MAYA_SCRIPT_PATH=$CUR_EXEC_DIR/tools
 
 echo "Maya project set to: " $MAYA_PROJECT
 
